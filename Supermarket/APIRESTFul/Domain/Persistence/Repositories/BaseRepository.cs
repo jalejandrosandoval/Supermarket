@@ -1,0 +1,15 @@
+﻿using APIRESTFul.Domain.Persistence.Context;
+
+namespace APIRESTFul.Domain.Persistence.Repositories
+{
+    public abstract class BaseRepository
+    {
+        protected readonly AppDbContext _context;
+
+        public BaseRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
+    }
+}
